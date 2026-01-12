@@ -144,23 +144,23 @@ app/
 
 #### Meaning of each folder
 
-- `api/`  
-  HTTP handlers, controllers, CLI entrypoints, DTOs, serializers.  
+- `api/`
+  HTTP handlers, controllers, CLI entrypoints, DTOs, serializers.
   No business logic.
 
-- `core/`  
-  Business logic, services, validation, processing.  
+- `core/`
+  Business logic, services, validation, processing.
   Code in `core/` should be testable without DB, HTTP, or Kubernetes.
 
-- `infra/`  
-  Integrations with external systems (DB, queues, Kubernetes, HTTP clients, file storage, caches, cloud SDKs, etc.).  
+- `infra/`
+  Integrations with external systems (DB, queues, Kubernetes, HTTP clients, file storage, caches, cloud SDKs, etc.).
   No business rules.
 
-- `shared/`  
-  Utilities or shared code used across multiple features, but with a clear purpose  
+- `shared/`
+  Utilities or shared code used across multiple features, but with a clear purpose
   (e.g., logging, tracing, configuration, metrics, error handling).
 
-- `tests/`  
+- `tests/`
   Tests should roughly mirror the structure of `app/` for easier discovery and maintenance.
 
 ### Feature-based organization
